@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "FAFIRE_App",
-    "slug": "FAFIRE_App",
+    "name": "FAFIRE Task Manager",
+    "slug": "fafire-task-manager",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,17 +13,49 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Este app precisa acessar a câmera para capturar fotos das tarefas.",
+        "NSLocationWhenInUseUsageDescription": "Este app precisa acessar sua localização para definir onde as tarefas devem ser realizadas.",
+        "NSPhotoLibraryUsageDescription": "Este app precisa acessar sua galeria para selecionar imagens para as tarefas."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Este app precisa acessar a câmera para capturar fotos das tarefas."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Este app precisa acessar sua localização para definir onde as tarefas devem ser realizadas."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Este app precisa acessar sua galeria para selecionar imagens para as tarefas."
+        }
+      ]
+    ]
   }
 }
