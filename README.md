@@ -112,6 +112,12 @@ npm start
 
 Projeto acadêmico FAFIRE. Todos os direitos reservados.
 
+## 👨‍💻 Desenvolvedor
+
+**Petronio Silva** - [@ppsfafire](https://github.com/ppsfafire)
+
+Desenvolvido com ❤️ usando React Native, Expo e Supabase.
+
 ---
 
 **FAFIRE Task Manager** - Organize suas tarefas de forma inteligente e eficiente! 📱✨
