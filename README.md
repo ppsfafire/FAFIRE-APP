@@ -89,14 +89,7 @@ npm start
 **Observação:**
 - Não é possível criar tarefas sem categoria cadastrada.
 
-## 🐛 Solução de Problemas Recentes
 
-- Corrigido bug de UUID inválido ao criar tarefas
-- Corrigido erro de RLS em categorias e tarefas
-- Corrigido problema de ANON KEY inválida (bug do Supabase)
-- Barra de progresso e estatísticas agora atualizam corretamente
-- Melhorias de contraste e acessibilidade no modo escuro
-- Removidos arquivos de teste e exemplos antigos
 
 ## 📈 Melhorias Futuras
 - Compartilhamento de tarefas
