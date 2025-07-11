@@ -87,10 +87,6 @@ npm start
 - Sincronização em tempo real
 
 **Observação:**
-- As policies RLS foram ajustadas para garantir que cada usuário só acesse seus próprios dados.
-- O campo `user_id` é obrigatório em todas as inserções.
-- O campo `category_id` das tarefas agora referencia corretamente o id da categoria.
-- O app exibe o nome da categoria em vez do id.
 - Não é possível criar tarefas sem categoria cadastrada.
 
 ## 🐛 Solução de Problemas Recentes
